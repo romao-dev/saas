@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block test_title %} home - {{block.super}} {% endblock test_title %}
+
+{% block content %}
+
+<div>Page Count {{page_count}}</div>{{queryset}}
+
+<div>{% include 'snippets/user-msg.html' %}</div>
+{% endblock content %}
